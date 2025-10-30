@@ -18,6 +18,7 @@ public class DependencyInjectionApplication {
 		WishMessageGenerator generator = ctx.getBean("wishMessageGenerator", WishMessageGenerator.class);
 		String result = generator.generateWishMessage("John");
 		System.out.println(result);
+		System.out.println("DependencyInjectionApplication.main()");
 	}
 	
 	@Bean
